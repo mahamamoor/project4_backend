@@ -8,7 +8,7 @@ from .models import Shop
 class ShopList(generics.ListCreateAPIView):
     queryset = Shop.objects.all().order_by('id')
     serializer_class = ShopSerializer
-    
+
 class ShopDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Shop.objects.all().order_by('id')
     serializer_class = ShopSerializer
