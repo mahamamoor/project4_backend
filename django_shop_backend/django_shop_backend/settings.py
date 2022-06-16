@@ -55,7 +55,14 @@ MIDDLEWARE = [
 ]
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
+
+CORS_ALLOWED_ORIGINS = [
+  'http://localhost:8000',
+  'http://localhost:3000',
+  'https://etsy-ish.herokuapp.com',
+  'https://etsyish-shop.herokuapp.com',
+]
 
 ROOT_URLCONF = 'django_shop_backend.urls'
 
