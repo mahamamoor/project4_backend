@@ -6,3 +6,4 @@ class Shop(models.Model):
     description = models.CharField(max_length=50)
     image = models.TextField(default='')
     price = models.IntegerField()
+
