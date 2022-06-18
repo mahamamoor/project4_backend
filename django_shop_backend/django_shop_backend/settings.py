@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'shop_api',
     'cart_api',
+    'chart_api',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
